@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<nav t-name="Menu">
+    <div class="o_main_navbar">
+        <a href="#" class="fa o_menu_toggle"/>
+        <button type="button" class="fa fa-bars pull-right visible-xs-block o_mobile_menu_toggle"/>
+
+        <div class="o_menu_brand" role="button" />
+        <ul class="o_menu_sections"/>
+        <ul class="o_menu_systray"/>
+    </div>
+    <div class="environment_ribbon" style="background-color: rgba(255, 0, 0, 0.6); 
+    width: 200px;position: absolute;
+    top: 25px;left: -35px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    z-index: 1000;
+    position: fixed;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    font-size: 16px;
+		font-weight: bold;">LEONCE</div>
+</nav>
+</templates>

@@ -1,0 +1,54 @@
+<odoo>
+  <data>
+    <record id="ribbon_base_action" model="ir.actions.act_window">
+      <field name="name">Ribban base</field>
+      <field name="res_model">ribban.active</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to add a new ribban text
+        </p>
+      </field>
+    </record>
+
+    <record id="ribbon_base_view_form" model="ir.ui.view">
+      <field name="name">Ribban base view form</field>
+      <field name="model">ribban.active</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <header>
+            <button name="active_this_ribban" string="Activate this ribban" type="object" class="oe_highlight"/>
+          </header>
+          <sheet string="">
+            <group>
+              <field name="name"/>
+            </group>
+            <group>
+              <field name="ribbon_text"/>
+            </group>
+          </sheet>
+
+        </form>
+      </field>
+    </record>
+
+    <record id="ribbon_base_view_tree" model="ir.ui.view">
+      <field name="name">ribbon base view tree</field>
+      <field name="model">ribban.active</field>
+      <field name="arch" type="xml">
+        <tree string="">
+          <field name="name"/>
+          <field name="ribbon_text"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <menuitem id="ribbon_base_main_menu" name="Environment ribban" action="" web_icon="environment_ribbon,static/src/img/logo.png"
+              parent="" sequence=""/>
+
+    <menuitem id="ribbon_base_sub_menu" name="Ribban" action="ribbon_base_action"
+              parent="ribbon_base_main_menu" sequence=""/>
+  </data>
+</odoo>
