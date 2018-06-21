@@ -22,7 +22,7 @@ class Ribban(models.Model):
             if text_search in line:
                 replace_text = line
                 file_app_switcher_read = open(file_path).read()
-                file_app_switcher_read = file_app_switcher_read.replace(replace_text, '\t\t%s'%text_replace+'\n')
+                file_app_switcher_read = file_app_switcher_read.replace(replace_text, '\t%s'%text_replace+'\n')
                 file_app_switcher_write = open(file_path, 'w')
                 file_app_switcher_write.write(file_app_switcher_read)
                 file_app_switcher_write.close()
